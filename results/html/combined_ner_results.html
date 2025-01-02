@@ -1,0 +1,262 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>NER Comparison</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                line-height: 1.5;
+                padding: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .entity {
+                display: inline-block;
+                border-radius: 0.35em;
+                margin: 0.2em;
+            }
+            .comparison {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            h2 {
+                color: #2a2a2a;
+                border-bottom: 2px solid #eee;
+                padding-bottom: 0.5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>NER Comparison</h2>
+        <div class="content">
+            
+    <div class="comparison">
+        <div class="spacy-results">
+            <h2>spaCy NER Results</h2>
+            <div class="entities" style="line-height: 2.5; direction: ltr">On 
+<mark class="entity" style="background: #bfe1d9; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    January 20, 2023
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">DATE</span>
+</mark>
+, 
+<mark class="entity" style="background: #aa9cfc; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Elon Musk
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">PERSON</span>
+</mark>
+, the CEO of 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Tesla Inc.
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+, announced at a conference in 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Palo Alto
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    California
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, that the company would be expanding its operations to 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Berlin
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Germany
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, where a new 
+<mark class="entity" style="background: #9cc9cc; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Gigafactory
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">FAC</span>
+</mark>
+ is under construction. This expansion aligns with 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Tesla
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+'s plans to increase its production capacity in 
+<mark class="entity" style="background: #ff9561; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Europe
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">LOC</span>
+</mark>
+.<br><br>The event, named 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    the Sustainable Energy Future Summit
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+, was attended by executives from leading organizations, including 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Mercedes-Benz
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+, 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Volkswagen
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+, and 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    BMW
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+. During the event, 
+<mark class="entity" style="background: #aa9cfc; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Musk
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">PERSON</span>
+</mark>
+ emphasized the importance of renewable energy sources and highlighted 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Tesla
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+'s collaboration with SolarCity to provide solar solutions for households in 
+<mark class="entity" style="background: #ff9561; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    North America
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">LOC</span>
+</mark>
+.<br><br>
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    The World Health Organization
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+ (WHO), headquartered in 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Geneva
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Switzerland
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, also released a report on 
+<mark class="entity" style="background: #bfe1d9; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    the same day
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">DATE</span>
+</mark>
+, outlining the global benefits of transitioning to renewable energy by 
+<mark class="entity" style="background: #bfe1d9; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    2030
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">DATE</span>
+</mark>
+. The report referenced studies conducted by 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    the Massachusetts Institute of Technology
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+ (
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    MIT
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+) and 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    the University of Cambridge
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+, showing that investments in green technology could reduce carbon emissions by 
+<mark class="entity" style="background: #e4e7d2; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    40%
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">PERCENT</span>
+</mark>
+ over 
+<mark class="entity" style="background: #bfe1d9; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    the next decade
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">DATE</span>
+</mark>
+.<br><br>Meanwhile, 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    the United Nations
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+ (
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    UN
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+) held a parallel conference in 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    New York City
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, focusing on climate change and sustainable development goals (SDGs). The conference featured speeches by notable figures such as 
+<mark class="entity" style="background: #aa9cfc; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Greta Thunberg
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">PERSON</span>
+</mark>
+ and 
+<mark class="entity" style="background: #aa9cfc; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Antonio Guterres
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">PERSON</span>
+</mark>
+. A significant announcement was made regarding the funding of renewable energy projects in 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    India
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    China
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, and 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Brazil
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, aiming to reduce the reliance on fossil fuels.<br><br>In entertainment, 
+<mark class="entity" style="background: #ffeb80; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    the Grammy Awards 2023
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">EVENT</span>
+</mark>
+, held at 
+<mark class="entity" style="background: #9cc9cc; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    the Staples Center
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">FAC</span>
+</mark>
+ in 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Los Angeles
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, 
+<mark class="entity" style="background: #feca74; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    California
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">GPE</span>
+</mark>
+, celebrated the achievements of artists like 
+<mark class="entity" style="background: #7aecec; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Beyoncé
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">ORG</span>
+</mark>
+, who won the award for Best Album, and 
+<mark class="entity" style="background: #aa9cfc; padding: 0.45em 0.6em; margin: 0 0.25em; line-height: 1; border-radius: 0.35em;">
+    Taylor Swift
+    <span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">PERSON</span>
+</mark>
+, who performed her hit song &quot;Willow.&quot;</div>
+        </div>
+        <div class="transformer-results">
+            <h2>Transformer NER Results</h2>
+            On January 20, <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">202<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (51.63%)</span></mark>3, <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">El<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-PER (99.97%)</span></mark>on <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Mu<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-PER (99.97%)</span></mark>sk, the CEO <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">of<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.58%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">T<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-PER (99.95%)</span></mark>esla <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Inc<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.83%)</span></mark>., announced at a conference in <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Pa<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.81%)</span></mark>lo <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Alto<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.90%)</span></mark>, <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">California<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.96%)</span></mark>, that the company would be expanding its operations to <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Berlin<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.96%)</span></mark>, <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Germany<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.99%)</span></mark>, where a new Gigafactory is under construction. This expansion aligns with Tesla's plans to increase its production capacity in <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Europe<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.98%)</span></mark>.
+
+The event, named the <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Sustainable<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (99.24%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Energy<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (95.67%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Future<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (99.32%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Summit<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (99.61%)</span></mark>, was attended by executives from leading organizations, including <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Mercedes<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.90%)</span></mark><mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">-<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (98.51%)</span></mark><mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Benz<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.94%)</span></mark>, <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Volkswagen<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.93%)</span></mark>, and <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">BMW<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.86%)</span></mark>. During the event, Musk emphasized the importance of renewable energy sources and highlighted Tesla's collaboration with <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Solar<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.72%)</span></mark><mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">City<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.96%)</span></mark> to provide solar solutions for households in <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">North<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.94%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">America<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.95%)</span></mark>.
+
+The <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">World<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.95%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Health<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.91%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Organization<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.93%)</span></mark> (<mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">WHO<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.94%)</span></mark>), headquartered in <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Geneva<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.84%)</span></mark>, <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Switzerland<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.98%)</span></mark>, also released a report on the same day, outlining the global benefits of transitioning to renewable energy by 2030. The report referenced studies conducted by the <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Massachusetts<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.90%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Institute<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.83%)</span></mark> of <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Technology<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.63%)</span></mark> (<mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">MIT<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.67%)</span></mark>) and the <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">University<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.20%)</span></mark> of <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Cambridge<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.39%)</span></mark>, showing that investments in green technology could reduce carbon emissions by 40% over the next decade.
+
+Meanwhile, the <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">United<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.91%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Nations<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.94%)</span></mark> (<mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">UN<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-ORG (99.94%)</span></mark>) held a parallel conference in <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">New<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.95%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">York<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.95%)</span></mark> City, focusing on climate change and sustainable development goals (<mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">SD<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (58.86%)</span></mark>Gs). The conference featured speeches by notable figures such as Greta Thunberg and <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Antonio<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-PER (99.84%)</span></mark> Guterres. A significant announcement was made regarding the funding of renewable energy projects in <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">India<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.98%)</span></mark>, <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">China<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.98%)</span></mark>, and <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Brazil<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.98%)</span></mark>, aiming to reduce the reliance on fossil fuels.
+
+In entertainment, the <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Grammy<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (99.49%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Awards<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (99.52%)</span></mark> 2023, held at the <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">St<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (97.61%)</span></mark>aples <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Center<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (98.87%)</span></mark> in <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Los<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.89%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Angeles<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-LOC (99.92%)</span></mark>, California, celebrated the achievements of artists like <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Beyoncé<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-PER (99.83%)</span></mark>, who won the award for <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Best<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (63.00%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Album<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (76.25%)</span></mark>, and <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Taylor<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-PER (99.79%)</span></mark> <mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Swift<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-PER (99.65%)</span></mark>, who performed her hit song "<mark class="entity" style="background: #ddd; padding: 0.2em 0.3em; margin: 0 0.2em; line-height: 1; border-radius: 0.35em;">Willow<span style="font-size: 0.8em; font-weight: bold; line-height: 1; border-radius: 0.35em; vertical-align: middle; margin-left: 0.5rem">I-MISC (97.19%)</span></mark>."
+        </div>
+    </div>
+    
+        </div>
+    </body>
+    </html>
+    

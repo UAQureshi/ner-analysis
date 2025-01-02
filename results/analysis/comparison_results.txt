@@ -1,0 +1,211 @@
+=== NER Model Comparison Analysis ===
+
+Overall Statistics:
+Total Unique Entities: 99
+Entities Found by Both Models: 14
+Entities Found Only by spaCy: 25
+Entities Found Only by Transformer: 60
+
+Detailed Comparison:
+                                             spaCy Transformer
+##C                                            NaN       I-ORG
+##ap                                           NaN       I-LOC
+##berg                                         NaN       I-PER
+##hun                                          NaN       I-PER
+##ity                                          NaN       I-ORG
+##les                                          NaN       I-LOC
+##lo                                           NaN       I-LOC
+##on                                           NaN       I-PER
+##res                                          NaN       I-PER
+##reta                                         NaN       I-PER
+##sk                                           NaN       I-PER
+##sla                                          NaN       I-ORG
+##uter                                         NaN       I-PER
+-                                              NaN       I-ORG
+202                                            NaN      I-MISC
+2030                                          DATE         NaN
+40%                                        PERCENT         NaN
+Album                                          NaN      I-MISC
+Alto                                           NaN       I-LOC
+America                                        NaN       I-LOC
+Angeles                                        NaN       I-LOC
+Antonio                                        NaN       I-PER
+Antonio Guterres                            PERSON         NaN
+Awards                                         NaN      I-MISC
+BMW                                            ORG       I-ORG
+Benz                                           NaN       I-ORG
+Berlin                                         GPE       I-LOC
+Best                                           NaN      I-MISC
+Beyoncé                                        ORG       I-PER
+Brazil                                         GPE       I-LOC
+California                                     GPE       I-LOC
+Cambridge                                      NaN       I-ORG
+Center                                         NaN       I-LOC
+China                                          GPE       I-LOC
+City                                           NaN       I-LOC
+El                                             NaN       I-PER
+Elon Musk                                   PERSON         NaN
+Energy                                         NaN      I-MISC
+Europe                                         LOC       I-LOC
+Future                                         NaN      I-MISC
+G                                              NaN       I-PER
+Geneva                                         GPE       I-LOC
+Germany                                        GPE       I-LOC
+Gigafactory                                    FAC         NaN
+Grammy                                         NaN      I-MISC
+Greta Thunberg                              PERSON         NaN
+Health                                         NaN       I-ORG
+Inc                                            NaN       I-ORG
+India                                          GPE       I-LOC
+Institute                                      NaN       I-ORG
+January 20, 2023                              DATE         NaN
+Los                                            NaN       I-LOC
+Los Angeles                                    GPE         NaN
+MIT                                            ORG       I-ORG
+Massachusetts                                  NaN       I-ORG
+Mercedes                                       NaN       I-ORG
+Mercedes-Benz                                  ORG         NaN
+Mu                                             NaN       I-PER
+Musk                                        PERSON         NaN
+Nations                                        NaN       I-ORG
+New                                            NaN       I-LOC
+New York City                                  GPE         NaN
+North                                          NaN       I-LOC
+North America                                  LOC         NaN
+Organization                                   NaN       I-ORG
+Pa                                             NaN       I-LOC
+Palo Alto                                      GPE         NaN
+SD                                             NaN      I-MISC
+Solar                                          NaN       I-ORG
+St                                             NaN       I-LOC
+Summit                                         NaN      I-MISC
+Sustainable                                    NaN      I-MISC
+Swift                                          NaN       I-PER
+Switzerland                                    GPE       I-LOC
+T                                              NaN       I-PER
+Taylor                                         NaN       I-PER
+Taylor Swift                                PERSON         NaN
+Te                                             NaN       I-ORG
+Technology                                     NaN       I-ORG
+Tesla                                          ORG         NaN
+Tesla Inc.                                     ORG         NaN
+The World Health Organization                  ORG         NaN
+UN                                             ORG       I-ORG
+United                                         NaN       I-ORG
+University                                     NaN       I-ORG
+Volkswagen                                     ORG       I-ORG
+WHO                                            NaN       I-ORG
+Willow                                         NaN      I-MISC
+World                                          NaN       I-ORG
+York                                           NaN       I-LOC
+of                                             NaN       I-ORG
+the Grammy Awards 2023                       EVENT         NaN
+the Massachusetts Institute of Technology      ORG         NaN
+the Staples Center                             FAC         NaN
+the Sustainable Energy Future Summit           ORG         NaN
+the United Nations                             ORG         NaN
+the University of Cambridge                    ORG         NaN
+the next decade                               DATE         NaN
+the same day                                  DATE         NaN
+
+Entity Classification Disagreements:
+                                             spaCy Transformer
+##C                                            NaN       I-ORG
+##ap                                           NaN       I-LOC
+##berg                                         NaN       I-PER
+##hun                                          NaN       I-PER
+##ity                                          NaN       I-ORG
+##les                                          NaN       I-LOC
+##lo                                           NaN       I-LOC
+##on                                           NaN       I-PER
+##res                                          NaN       I-PER
+##reta                                         NaN       I-PER
+##sk                                           NaN       I-PER
+##sla                                          NaN       I-ORG
+##uter                                         NaN       I-PER
+-                                              NaN       I-ORG
+202                                            NaN      I-MISC
+2030                                          DATE         NaN
+40%                                        PERCENT         NaN
+Album                                          NaN      I-MISC
+Alto                                           NaN       I-LOC
+America                                        NaN       I-LOC
+Angeles                                        NaN       I-LOC
+Antonio                                        NaN       I-PER
+Antonio Guterres                            PERSON         NaN
+Awards                                         NaN      I-MISC
+BMW                                            ORG       I-ORG
+Benz                                           NaN       I-ORG
+Berlin                                         GPE       I-LOC
+Best                                           NaN      I-MISC
+Beyoncé                                        ORG       I-PER
+Brazil                                         GPE       I-LOC
+California                                     GPE       I-LOC
+Cambridge                                      NaN       I-ORG
+Center                                         NaN       I-LOC
+China                                          GPE       I-LOC
+City                                           NaN       I-LOC
+El                                             NaN       I-PER
+Elon Musk                                   PERSON         NaN
+Energy                                         NaN      I-MISC
+Europe                                         LOC       I-LOC
+Future                                         NaN      I-MISC
+G                                              NaN       I-PER
+Geneva                                         GPE       I-LOC
+Germany                                        GPE       I-LOC
+Gigafactory                                    FAC         NaN
+Grammy                                         NaN      I-MISC
+Greta Thunberg                              PERSON         NaN
+Health                                         NaN       I-ORG
+Inc                                            NaN       I-ORG
+India                                          GPE       I-LOC
+Institute                                      NaN       I-ORG
+January 20, 2023                              DATE         NaN
+Los                                            NaN       I-LOC
+Los Angeles                                    GPE         NaN
+MIT                                            ORG       I-ORG
+Massachusetts                                  NaN       I-ORG
+Mercedes                                       NaN       I-ORG
+Mercedes-Benz                                  ORG         NaN
+Mu                                             NaN       I-PER
+Musk                                        PERSON         NaN
+Nations                                        NaN       I-ORG
+New                                            NaN       I-LOC
+New York City                                  GPE         NaN
+North                                          NaN       I-LOC
+North America                                  LOC         NaN
+Organization                                   NaN       I-ORG
+Pa                                             NaN       I-LOC
+Palo Alto                                      GPE         NaN
+SD                                             NaN      I-MISC
+Solar                                          NaN       I-ORG
+St                                             NaN       I-LOC
+Summit                                         NaN      I-MISC
+Sustainable                                    NaN      I-MISC
+Swift                                          NaN       I-PER
+Switzerland                                    GPE       I-LOC
+T                                              NaN       I-PER
+Taylor                                         NaN       I-PER
+Taylor Swift                                PERSON         NaN
+Te                                             NaN       I-ORG
+Technology                                     NaN       I-ORG
+Tesla                                          ORG         NaN
+Tesla Inc.                                     ORG         NaN
+The World Health Organization                  ORG         NaN
+UN                                             ORG       I-ORG
+United                                         NaN       I-ORG
+University                                     NaN       I-ORG
+Volkswagen                                     ORG       I-ORG
+WHO                                            NaN       I-ORG
+Willow                                         NaN      I-MISC
+World                                          NaN       I-ORG
+York                                           NaN       I-LOC
+of                                             NaN       I-ORG
+the Grammy Awards 2023                       EVENT         NaN
+the Massachusetts Institute of Technology      ORG         NaN
+the Staples Center                             FAC         NaN
+the Sustainable Energy Future Summit           ORG         NaN
+the United Nations                             ORG         NaN
+the University of Cambridge                    ORG         NaN
+the next decade                               DATE         NaN
+the same day                                  DATE         NaN
