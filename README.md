@@ -1,11 +1,11 @@
-# Named Entity Recognition (NER) Analysis Tool
+# Named Entity Recognition (NER) - Introduction
 
-A comprehensive tool for analyzing and comparing different Named Entity Recognition approaches, with a focus on applications in Retrieval Augmented Generation (RAG) systems.
+An introduction and comparison of different Named Entity Recognition approaches, with a focus on applications in Retrieval Augmented Generation (RAG) systems.
 
 ## Overview
 
 This tool provides a complete pipeline for:
-- Named Entity Recognition using multiple approaches (spaCy and Transformers)
+- Named Entity Recognition using two approaches spaCy and Transformers
 - Comparative analysis of different NER models
 - Knowledge graph generation from extracted entities
 - Entity-aware document chunking
@@ -27,6 +27,12 @@ This tool provides a complete pipeline for:
   - Model comparison
   - Entity disagreements
   - Chunking results
+
+## Results
+
+![Contextual Graph](results/graphs/contextual_knowledge_graph.png)
+![Semantic Knowledge Graph](results/graphs/semantic_knowledge_graph.png)
+![HTML Visualisation](results/html_results.png)
 
 ## Requirements
 
@@ -152,6 +158,4 @@ MIT License - feel free to use and modify for your needs.
 
 ## Acknowledgments
 
-- spaCy for their excellent NLP library
-- Hugging Face for transformer models
-- NetworkX for graph visualization 
+- Gen AI for Helping me create a re-usable arfitact and teaching me NER in a Hands-on way!
